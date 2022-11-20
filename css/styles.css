@@ -6,6 +6,10 @@
   --main-text-color: #000;
   --alternative-text-color-white: #fff;
   --alternative-text-color-grey: #757575;
+  --alternative-text-color-darkgrey: #212121;
+  --alternative-text-color-black-alfa60: #ffffff99;
+  --alternative-background-color-lightgrey: #f5f4fa;
+  --alternative-background-color-white: #fff;
 }
 
 /* GLOBAL */
@@ -124,7 +128,7 @@ nav {
 /* OUR TEAM */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--alternative-background-color-lightgrey);
 }
 
 .team-showcase {
@@ -132,7 +136,7 @@ nav {
 }
 
 .team-card {
-  background-color: #fff;
+  background-color: var(--alternative-background-color-white);
 }
 
 .team-person {
@@ -169,12 +173,12 @@ nav {
 }
 
 .footer-mail {
-  color: #ffffff99;
+  color: var(--alternative-text-color-black-alfa60);
   text-decoration: underline;
 }
 
 .footer-tel {
-  color: #ffffff99;
+  color: var(--alternative-text-color-black-alfa60);
   text-decoration: none;
 }
 
@@ -191,9 +195,9 @@ nav {
 }
 
 .filter-button {
-  background-color: #f5f4fa;
+  background-color: var(--alternative-background-color-lightgrey);
   border: none;
-  color: #212121;
+  color: var(--alternative-text-color-darkgrey);
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -214,7 +218,7 @@ nav {
 }
 
 .portfolio-project-title {
-  color: #212121;
+  color: var(--alternative-text-color-darkgrey);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
