@@ -7,16 +7,19 @@
 body {
   color: black;
   font-family: Roboto, sans-serif;
+  font-weight: 500;
 }
 
-.header {
-  display: inline-block;
+.hover-focus:hover,
+.hover-focus:focus {
+  color: var(--main-brand-color);
 }
 
 .logo,
-.logo:visited {
-  color: --main-text-color;
-  display: inherit;
+.logo:visited,
+.logo:active {
+  color: var(--main-text-color);
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -27,16 +30,22 @@ body {
   color: var(--main-brand-color);
 }
 
-.nav {
+nav {
   display: inline-block;
 }
-.nav-link,
-.nav-link:visited {
-  color: --main-text-color;
+
+.nav-item {
   display: inline;
+}
+
+.header-contact,
+.header-contact:visited {
+  color: #757575;
   text-decoration: none;
 }
 
-.header-mail {
-  text-decoration: underline;
+.nav-link,
+.nav-link:visited {
+  color: #000;
+  text-decoration: none;
 }
