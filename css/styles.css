@@ -1,19 +1,33 @@
+/* ROOT */
+
 :root {
   --main-background-color: #2f303a;
   --main-brand-color: #2196f3;
   --main-text-color: #000;
+  --alternative-text-color-white: #fff;
+  --alternative-text-color-grey: #757575;
 }
+
+/* GLOBAL */
 
 body {
-  color: black;
+  color: var(--main-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 500;
 }
 
-.hover-focus:hover,
-.hover-focus:focus {
+.hover-focus-blue:active,
+.hover-focus-blue:focus,
+.hover-focus-blue:hover {
   color: var(--main-brand-color);
 }
+
+.hover-focus-white:active,
+.hover-focus-white:focus,
+.hover-focus-white:hover {
+  color: var(--alternative-text-color-white);
+}
+
+/* HEADER*/
 
 .logo,
 .logo:visited,
@@ -23,6 +37,7 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -38,14 +53,120 @@ nav {
   display: inline;
 }
 
-.header-contact,
-.header-contact:visited {
-  color: #757575;
+.header-contact {
+  color: var(--alternative-text-color-grey);
   text-decoration: none;
 }
 
-.nav-link,
-.nav-link:visited {
-  color: #000;
+.nav-link {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+/* MAIN */
+
+/* HERO */
+.hero {
+  background-color: var(--main-background-color);
+  text-align: center;
+}
+
+.hero-header {
+  color: var(--alternative-text-color-white);
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.36em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--main-brand-color);
+  border: none;
+  color: var(--alternative-text-color-white);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.88em;
+}
+
+/* OUR ADVANTAGES */
+
+.advantages-term {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  color: var(--alternative-text-color-grey);
+  line-height: 1.71em;
+}
+
+/* WHAT WE DO */
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.showcase-item {
+  display: inline;
+}
+
+/* OUR TEAM */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-showcase {
+  list-style: none;
+}
+
+.team-card {
+  background-color: #fff;
+}
+
+.team-person {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team-role {
+  color: var(--alternative-text-color-grey);
+  font-size: 16px;
+}
+/* FOOTER */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-dark-background {
+  color: var(--alternative-text-color-white);
+}
+
+.footer-contact-list {
+  list-style: none;
+}
+
+.footer-contact-item {
+  font-style: normal;
+}
+
+.footer-location {
+  color: var(--alternative-text-color-white);
+  text-decoration: none;
+}
+
+.footer-mail {
+  color: #ffffff99;
+  text-decoration: underline;
+}
+
+.footer-tel {
+  color: #ffffff99;
   text-decoration: none;
 }
