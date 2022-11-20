@@ -1,10 +1,42 @@
 :root {
-  --main-brand-color: #2196f3;
   --main-background-color: #2f303a;
-  --default-image-width: 370px;
-  --default-image-height: 294px;
+  --main-brand-color: #2196f3;
+  --main-text-color: #000;
 }
 
 body {
+  color: black;
   font-family: Roboto, sans-serif;
+}
+
+.header {
+  display: inline-block;
+}
+
+.logo,
+.logo:visited {
+  color: --main-text-color;
+  display: inherit;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--main-brand-color);
+}
+
+.nav {
+  display: inline-block;
+}
+.nav-link,
+.nav-link:visited {
+  color: --main-text-color;
+  display: inline;
+  text-decoration: none;
+}
+
+.header-mail {
+  text-decoration: underline;
 }
