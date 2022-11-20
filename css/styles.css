@@ -15,6 +15,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+button {
+  font-family: Roboto, sans-serif;
+}
+
 .hover-focus-blue:active,
 .hover-focus-blue:focus,
 .hover-focus-blue:hover {
@@ -55,11 +59,13 @@ nav {
 
 .header-contact {
   color: var(--alternative-text-color-grey);
+  font-weight: 500;
   text-decoration: none;
 }
 
 .nav-link {
   color: var(--main-text-color);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -138,10 +144,11 @@ nav {
   color: var(--alternative-text-color-grey);
   font-size: 16px;
 }
+
 /* FOOTER */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--main-background-color);
 }
 
 .logo-dark-background {
@@ -169,4 +176,53 @@ nav {
 .footer-tel {
   color: #ffffff99;
   text-decoration: none;
+}
+
+/* PORTFOLIO */
+
+/* FITLER */
+
+.filter-button-list {
+  list-style: none;
+}
+
+.filter-option {
+  display: inline;
+}
+
+.filter-button {
+  background-color: #f5f4fa;
+  border: none;
+  color: #212121;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63em;
+}
+
+.filter-button:active,
+.filter-button:focus,
+.filter-button:hover {
+  background-color: var(--main-brand-color);
+  color: var(--alternative-text-color-white);
+}
+
+/* PORTFOLIO GALLERY */
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-project-title {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 2em;
+}
+
+.portfolio-project-type {
+  color: var(--alternative-text-color-grey);
+  font-size: 16px;
+  line-height: 1.88em;
 }
