@@ -19,8 +19,8 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-button {
-  font-family: Roboto, sans-serif;
+.button {
+  font-family: inherit;
 }
 
 .hover-focus-blue:active,
@@ -33,6 +33,10 @@ button {
 .hover-focus-white:focus,
 .hover-focus-white:hover {
   color: var(--alternative-text-color-white);
+}
+
+.list {
+  list-style: none;
 }
 
 /* HEADER*/
@@ -53,7 +57,7 @@ button {
   color: var(--main-brand-color);
 }
 
-nav {
+.nav {
   display: inline-block;
 }
 
@@ -131,10 +135,6 @@ nav {
   background-color: var(--alternative-background-color-lightgrey);
 }
 
-.team-showcase {
-  list-style: none;
-}
-
 .team-card {
   background-color: var(--alternative-background-color-white);
 }
@@ -157,10 +157,6 @@ nav {
 
 .logo-dark-background {
   color: var(--alternative-text-color-white);
-}
-
-.footer-contact-list {
-  list-style: none;
 }
 
 .footer-contact-item {
@@ -186,10 +182,6 @@ nav {
 
 /* FITLER */
 
-.filter-button-list {
-  list-style: none;
-}
-
 .filter-option {
   display: inline;
 }
@@ -212,10 +204,6 @@ nav {
 }
 
 /* PORTFOLIO GALLERY */
-
-.portfolio-list {
-  list-style: none;
-}
 
 .portfolio-project-title {
   color: var(--alternative-text-color-darkgrey);
